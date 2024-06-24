@@ -6,8 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --background-gradient-color: #393636;
 }
 
+/* For dark mode */
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -16,18 +18,63 @@
   }
 }
 
+@layer base{
+  body {
+    @apply dark:bg-[#1A1A1A] bg-white
+  }
+}
+
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-size: 190px 190px;
+  background-color: #D6DAC8;
 }
+
+.Typewriter {
+  display: inline;
+}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.container {
+  position: relative;
+}
+
+.img-bg-container {
+  /* background-color: #e5e5f7; */
+  opacity: 0.8;
+  /* background-image:  linear-gradient(30deg, #2B2B2B 12%, transparent 12.5%, transparent 87%, #2B2B2B 87.5%, #2B2B2B), linear-gradient(150deg, #2A2A2A 12%, transparent 12.5%, transparent 87%, #2A2A2A 87.5%, #2A2A2A), linear-gradient(30deg, #2A2A2A 12%, transparent 12.5%, transparent 87%, #2A2A2A 87.5%, #2A2A2A), linear-gradient(150deg, #2C2C2C 12%, transparent 12.5%, transparent 87%, #2C2C2C 87.5%, #2C2C2C), linear-gradient(60deg, #2C2C2C 25%, transparent 25.5%, transparent 75%, #2C2C2C 75%, #2C2C2C), linear-gradient(60deg, #2B2B2B 25%, transparent 25.5%, transparent 75%, #2B2B2B 75%, #2B2B2B); */
+  /* background-size: 20px 35px;
+  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px; */
+  height: 300px;
+  width: 100%;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+}
+
+.my-img-container {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+}
+
+.my-img-container .img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.my-img-container .img:hover {
+  filter: grayscale(0%);
+}
+
+.fade-in-section {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(50px); /* Initially offset */
+  transition: opacity 1s ease, transform 1s ease; /* Smooth transition */
 }
