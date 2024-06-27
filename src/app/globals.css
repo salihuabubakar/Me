@@ -22,6 +22,10 @@
   body {
     @apply dark:bg-[#1A1A1A] bg-white
   }
+
+  #welcome-section {
+    @apply dark:bg-[#1d1d1d] bg-[#C4C8B8]
+  }
 }
 
 body {
@@ -30,8 +34,19 @@ body {
   background-color: #D6DAC8;
 }
 
+
 .Typewriter {
   display: inline;
+}
+
+.header-stick {
+  display: flex;
+  justify-content: space-between;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 
@@ -43,6 +58,22 @@ body {
 
 .container {
   position: relative;
+  margin-top: 12%;
+}
+
+#welcome-section {
+  margin-top: 5%;
+  margin-left: 8%;
+  margin-right: 8%;
+  padding: 3%;
+}
+
+#welcome-section p {
+  width: 50%;
+}
+
+.navigator {
+  margin: 3% 0;
 }
 
 .img-bg-container {

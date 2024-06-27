@@ -7,6 +7,12 @@ import Header from "./Components/Header";
 import BubbleText from "./Components/BubbleText";
 import FadeInSection from "./Components/FadeInSection";
 import FuzzyOverlay from "./Components/FuzzyOverlay";
+import { LinksContainer } from "./Components/ClipPathLink";
+import {
+  FiDownload,
+  FiArrowRight
+} from "react-icons/fi";
+import Link from "next/link";
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
@@ -18,10 +24,11 @@ const poppins = Rubik({
 })
 
 export default function Home() {
+
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col place-items-center  p-24 dark:invert">
+      <main className="flex min-h-screen flex-col place-items-center  p-24">
         <div className="container w-full">
           <FadeInSection>
             <div className="img-bg-container relative overflow-hidden">
@@ -29,7 +36,7 @@ export default function Home() {
             </div>
             <div className="my-img-container flex justify-center">
               <Image
-                className="z-50 img"
+                className="z-50 img "
                 src="/me-light.png"
                 alt="Salihu's Logo"
                 width={460}
@@ -41,14 +48,90 @@ export default function Home() {
           </FadeInSection>
         </div>
         <BubbleText text="Salihu Kutiriko Abubakar" />
-        <span className={`text-5xl text-[#222831] ${space_grotesk.className}`}>
+        <span className={`text-5xl text-[#222831] dark:text-[#C5C5C5] ${space_grotesk.className}`}>
           A Software  <Typewriter options={{strings: ['Engineer', 'Developer'], autoStart: true, loop: true}}/>
         </span>
 
+        <div className="navigator">
+          <Link href="#welcome-section">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 262 403" width="262" height="403" preserveAspectRatio="xMidYMid meet"
+              style={{width: '40px', height: '40px', transform: 'translate3d(0px, 0px, 0px)', 
+              contentVisibility: 'visible'}}
+            >
+              <defs>
+                <clipPath id="__lottie_element_2"><rect width="262" height="403" x="0" y="0"></rect></clipPath>
+                <clipPath id="__lottie_element_4"><path d="M0,0 L262,0 L262,403 L0,403z"></path></clipPath>
+                <clipPath id="__lottie_element_10">
+                  <path fill={`#222831`} clip-rule="nonzero" d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0" 
+                    fill-opacity="1"></path>
+                </clipPath>
+              </defs>
+              <g clip-path="url(#__lottie_element_2)">
+                <g clip-path="url(#__lottie_element_4)" transform="matrix(1,0,0,1,0,0)" opacity="1" style={{display: 'block'}}>
+                  <g clip-path="url(#__lottie_element_10)" transform="matrix(1,0,0,-0.9998999834060669,0,403)" opacity="1" style={{display: 'block'}}>
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill={`#222831`} fill-opacity="0" d=" M415.5,-209 C415.5,-209 -138.5,-209 -138.5,-209 C-138.5,-209 -138.5,627 -138.5,627 C-138.5,627 415.5,627 415.5,627 C415.5,627 415.5,-209 415.5,-209z"></path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                  d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                  d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                  d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
+                </path>
+              </g>
+              <g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                  d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
+                </path>
+              </g>
+              </g>
+              <g transform="matrix(1,0,0,1,101,85.37251281738281)" opacity="1" style={{display: 'block'}}><g opacity="1" transform="matrix(1,0,0,1,0,0)">
+                <path fill={`#222831`} fill-opacity="1" 
+                d=" M60,30 C60,46.569000244140625 46.569000244140625,60 30,60 C13.430999755859375,60 0,46.569000244140625 0,30 C0,13.430999755859375 13.430999755859375,0 30,0 C46.569000244140625,0 60,13.430999755859375 60,30 C60,30 60,30 60,30 C60,30 60,30 60,30z">
+                </path>
+                </g>
+                </g>
+                </g>
+                </g>
+            </svg>
+          </Link>
+        </div>
+
         <FadeInSection>
-          <h1>Section 2</h1>
-          <p>This section will also fade in when it enters the viewport.</p>
+          <div id="welcome-section" className="flex rounded p-10 justify-between dark:divide-[#C5C5C5] divide-neutral-900 divide-x">
+            <p className="dark:text-[#C5C5C5] text-2xl divide-y"> 
+              <span className="text-3xl">Hi, welcome to Salihu’s page.</span> <br></br><br></br>
+              Salihu is a graduate of computer science, 
+              over the past years, he has acquired a ton lot of knowledge and experience as a software engineer.
+              <br></br><br></br>
+              He has worked with companies and individuals to create inovative software solutions.
+            </p>
+            <div className="dark:text-[#C5C5C5] text-2xl flex-col space-y-24">
+              <div className="mt-5">
+                <Link href="/001SALIHU-KUTIRIKO-ABUBAKAR.pdf" download className="rounded-2xl w-full ml-2 border-2 border-dashed dark:border-[#C5C5C5] border-black bg-transparent px-6 py-3 font-semibold uppercase dark:hover:text-[#c5c5c5] text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                  Salihu’s Resume <FiDownload style={{ display: "inline"}} />
+                </Link>
+              </div>
+              <div>
+                <Link href="/projects" className="rounded-2xl ml-2 border-2 border-dashed dark:border-[#C5C5C5] border-black bg-transparent px-6 py-3 font-semibold uppercase dark:hover:text-[#c5c5c5] text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                  Go to careers <FiArrowRight style={{ display: "inline"}} />
+                </Link>
+              </div>
+            </div>
+          </div>
         </FadeInSection>
+
+        <LinksContainer />
+        
       </main>
     </>
   );
