@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <>
       <Header />
-      <main className="flex min-h-screen flex-col place-items-center  p-24">
+      <main className="flex min-h-screen flex-col place-items-center lg:p-24 sm:p-0">
         <div className="container w-full">
           <FadeInSection>
             <div className="img-bg-container relative overflow-hidden">
@@ -48,7 +48,7 @@ export default function Home() {
           </FadeInSection>
         </div>
         <BubbleText text="Salihu Kutiriko Abubakar" />
-        <span className={`text-5xl text-[#222831] dark:text-[#C5C5C5] ${space_grotesk.className}`}>
+        <span className={`lg:text-5xl md:text-3xl text-[#222831] dark:text-[#C5C5C5] ${space_grotesk.className}`}>
           A Software  <Typewriter options={{strings: ['Engineer', 'Developer'], autoStart: true, loop: true}}/>
         </span>
 
@@ -107,15 +107,14 @@ export default function Home() {
         </div>
 
         <FadeInSection>
-          <div id="welcome-section" className="flex rounded p-10 justify-between dark:divide-[#C5C5C5] divide-neutral-900 divide-x">
-            <p className="dark:text-[#C5C5C5] text-2xl divide-y"> 
-              <span className="text-3xl">Hi, welcome to Salihu’s page.</span> <br></br><br></br>
+          <div id="welcome-section" className="rounded dark:divide-[#C5C5C5] divide-neutral-900 divide-x">
+            <p className="dark:text-[#C5C5C5] text-[#000000] text-2xl sm:divide-none"> 
+              <span className="text-3xl">Hi, welcome to Salihu’s page.</span>
               Salihu is a graduate of computer science, 
               over the past years, he has acquired a ton lot of knowledge and experience as a software engineer.
-              <br></br><br></br>
-              He has worked with companies and individuals to create inovative software solutions.
+              <span>He has worked with companies and individuals to create inovative software solutions.</span>
             </p>
-            <div className="dark:text-[#C5C5C5] text-2xl flex-col space-y-24">
+            <div className="dark:text-[#C5C5C5] text-2xl flex-col space-y-24 btn-section">
               <div className="mt-5">
                 <Link href="/001SALIHU-KUTIRIKO-ABUBAKAR.pdf" download className="rounded-2xl w-full ml-2 border-2 border-dashed dark:border-[#C5C5C5] border-black bg-transparent px-6 py-3 font-semibold uppercase dark:hover:text-[#c5c5c5] text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                   Salihu’s Resume <FiDownload style={{ display: "inline"}} />

@@ -5,11 +5,12 @@ import {
   SiGithub
 } from "react-icons/si";
 import { useAnimate } from "framer-motion";
+import Link from "next/link";
 
 export const LinksContainer = () => {
   return (
     <div className="dark:bg-[#1d1d1d] bg-transparent px-4 py-12 w-full mt-24">
-      <div className="mx-auto">
+      <div className="mx-auto sm:m-0">
         <ClipPathLinks />
       </div>
     </div>
@@ -100,7 +101,7 @@ const LinkBox = ({ Icon, href }: any) => {
   };
 
   return (
-    <a
+    <Link
       href={href}
       target="_blank" 
       rel="noopener noreferrer"
@@ -110,7 +111,7 @@ const LinkBox = ({ Icon, href }: any) => {
       onMouseLeave={(e) => {
         handleMouseLeave(e);
       }}
-      className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36"
+      className="relative grid h-20 w-full place-content-center sm:h-28 md:h-36 text-[#000000] dark:text-white"
     >
       <Icon className="text-xl sm:text-3xl lg:text-4xl" />
 
@@ -119,10 +120,10 @@ const LinkBox = ({ Icon, href }: any) => {
         style={{
           clipPath: BOTTOM_RIGHT_CLIP,
         }}
-        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white"
+        className="absolute inset-0 grid place-content-center bg-neutral-900 text-white dark:text-[#000000]"
       >
-        <Icon className="text-xl sm:text-3xl md:text-4xl" />
+        <Icon className="text-xl sm:text-3xl md:text-4xl " />
       </div>
-    </a>
+    </Link>
   );
 };

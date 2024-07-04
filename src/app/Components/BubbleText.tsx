@@ -7,7 +7,7 @@ interface props {
 
 export default function BubbleText({ text }: props) {
   return (
-    <h2 className="text-center text-8xl text-[#222831]">
+    <h2 className="text-center lg:text-8xl md:text-6xl sm:text-4xl text-[#222831]">
       {text.split("").map((child, idx) => (
         <span className={`${styles.hoverText} dark:invert`} key={idx}>
           {child}
