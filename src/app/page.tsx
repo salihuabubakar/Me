@@ -109,7 +109,7 @@ export default function Home() {
         <FadeInSection>
           <div id="welcome-section" className="rounded dark:divide-[#C5C5C5] divide-neutral-900 divide-x">
             <p className="dark:text-[#C5C5C5] text-[#000000] text-2xl sm:divide-none"> 
-              <span className="text-3xl">Hi, welcome to Salihu’s page.</span>
+              <span className={`text-3xl ${space_grotesk.className}`}>Hi, welcome to Salihu’s page.</span>
               Salihu is a graduate of computer science, 
               over the past years, he has acquired a ton lot of knowledge and experience as a software engineer.
               <span>He has worked with companies and individuals to create inovative software solutions.</span>
