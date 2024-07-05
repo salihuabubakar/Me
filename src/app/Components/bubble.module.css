@@ -2,8 +2,34 @@
   transition:
     0.35s font-weight,
     0.35s color;
+  
+  font-size: 7rem;
 }
 
 .hoverText:hover {
   font-weight: 900;
+}
+
+@media screen and (max-width: 1495px) {
+  .hoverText {
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 1129px) {
+  .hoverText {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 754px) {
+  .hoverText {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 569px) {
+  .hoverText {
+    font-size: 2rem;
+  }
 }

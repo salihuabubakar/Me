@@ -61,6 +61,21 @@ body {
   margin-top: 12%;
 }
 
+@media screen and (max-width: 1023px) {
+  .container {
+    position: relative;
+    margin-top: 20%;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .container {
+    position: relative;
+    margin-top: 30%;
+  }
+}
+
+
 #welcome-section {
   margin-top: 5%;
   margin-left: 8%;
@@ -176,7 +191,7 @@ body {
 
 .my-img-container {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
 }
@@ -188,6 +203,13 @@ body {
 
 .my-img-container .img:hover {
   filter: grayscale(0%);
+}
+
+@media screen and (max-width: 720px) {
+  .my-img-container .img {
+    width: 330px !important;
+    height: 350px !important;
+  }
 }
 
 .fade-in-section {
