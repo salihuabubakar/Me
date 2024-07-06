@@ -64,38 +64,38 @@ export default function Home() {
                 <clipPath id="__lottie_element_2"><rect width="262" height="403" x="0" y="0"></rect></clipPath>
                 <clipPath id="__lottie_element_4"><path d="M0,0 L262,0 L262,403 L0,403z"></path></clipPath>
                 <clipPath id="__lottie_element_10">
-                  <path fill={`#222831`} clip-rule="nonzero" d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0" 
-                    fill-opacity="1"></path>
+                  <path fill={`#222831`} clipRule="nonzero" d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0" 
+                    fillOpacity="1"></path>
                 </clipPath>
               </defs>
-              <g clip-path="url(#__lottie_element_2)">
-                <g clip-path="url(#__lottie_element_4)" transform="matrix(1,0,0,1,0,0)" opacity="1" style={{display: 'block'}}>
-                  <g clip-path="url(#__lottie_element_10)" transform="matrix(1,0,0,-0.9998999834060669,0,403)" opacity="1" style={{display: 'block'}}>
-                    <g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill={`#222831`} fill-opacity="0" d=" M415.5,-209 C415.5,-209 -138.5,-209 -138.5,-209 C-138.5,-209 -138.5,627 -138.5,627 C-138.5,627 415.5,627 415.5,627 C415.5,627 415.5,-209 415.5,-209z"></path>
+              <g clipPath="url(#__lottie_element_2)">
+                <g clipPath="url(#__lottie_element_4)" transform="matrix(1,0,0,1,0,0)" opacity="1" style={{display: 'block'}}>
+                  <g clipPath="url(#__lottie_element_10)" transform="matrix(1,0,0,-0.9998999834060669,0,403)" opacity="1" style={{display: 'block'}}>
+                    <g opacity="1" transform="matrix(1,0,0,1,0,0)"><path fill={`#222831`} fillOpacity="0" d=" M415.5,-209 C415.5,-209 -138.5,-209 -138.5,-209 C-138.5,-209 -138.5,627 -138.5,627 C-138.5,627 415.5,627 415.5,627 C415.5,627 415.5,-209 415.5,-209z"></path>
               </g>
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                <path strokeLinecap="butt" strokeLinejoin="miter" fillOpacity="0" strokeMiterlimit="4" strokeDasharray=" 0 0" strokeDashoffset="0" stroke={`#222831 `} strokeOpacity="1" strokeWidth="30" 
                   d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
                 </path>
               </g>
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                <path strokeLinecap="butt" strokeLinejoin="miter" fillOpacity="0" strokeMiterlimit="4" strokeDasharray=" 0 0" strokeDashoffset="0" stroke={`#222831 `} strokeOpacity="1" strokeWidth="30" 
                   d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
                 </path>
               </g>
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                <path strokeLinecap="butt" strokeLinejoin="miter" fillOpacity="0" strokeMiterlimit="4" strokeDasharray=" 0 0" strokeDashoffset="0" stroke={`#222831 `} strokeOpacity="1" strokeWidth="30" 
                   d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
                 </path>
               </g>
               <g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                <path stroke-linecap="butt" stroke-linejoin="miter" fill-opacity="0" stroke-miterlimit="4" stroke-dasharray=" 0 0" stroke-dashoffset="0" stroke={`#222831 `} stroke-opacity="1" stroke-width="30" 
+                <path strokeLinecap="butt" strokeLinejoin="miter" fillOpacity="0" strokeMiterlimit="4" strokeDasharray=" 0 0" strokeDashoffset="0" stroke={`#222831 `} strokeOpacity="1" strokeWidth="30" 
                   d=" M131,0 C131,0 131,0 131,0 C203.34930419921875,0 262,58.650699615478516 262,131 C262,131 262,272 262,272 C262,344.34930419921875 203.34930419921875,403 131,403 C131,403 131,403 131,403 C58.650699615478516,403 0,344.34930419921875 0,272 C0,272 0,131 0,131 C0,58.650699615478516 58.650699615478516,0 131,0 C131,0 131,0 131,0 C131,0 131,0 131,0z">
                 </path>
               </g>
               </g>
               <g transform="matrix(1,0,0,1,101,85.37251281738281)" opacity="1" style={{display: 'block'}}><g opacity="1" transform="matrix(1,0,0,1,0,0)">
-                <path fill={`#222831`} fill-opacity="1" 
+                <path fill={`#222831`} fillOpacity="1" 
                 d=" M60,30 C60,46.569000244140625 46.569000244140625,60 30,60 C13.430999755859375,60 0,46.569000244140625 0,30 C0,13.430999755859375 13.430999755859375,0 30,0 C46.569000244140625,0 60,13.430999755859375 60,30 C60,30 60,30 60,30 C60,30 60,30 60,30z">
                 </path>
                 </g>

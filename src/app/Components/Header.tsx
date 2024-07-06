@@ -67,7 +67,7 @@ const Option = ({ text, Icon, setOpen, link, download }: any) => {
       </motion.span>
       <span>
         <Link
-          className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
+          className="pointer-events-none flex place-items-center gap-2  lg:pointer-events-auto lg:p-0"
           href={link}
           download
         >
@@ -98,7 +98,7 @@ export default function Header() {
           initial={wrapperVariants.closed}
           variants={wrapperVariants}
           style={{ originY: "top", translateX: "-50%" }}
-          className="flex flex-col gap-2 p-2 rounded-lg bg-[#c4c8b8] dark:bg-[#1d1d1d] shadow-xl absolute top-[120%] left-[70%] w-48 overflow-hidden z-50"
+          className="flex flex-col  p-2 rounded-lg bg-[#c4c8b8] dark:bg-[#1d1d1d] shadow-xl absolute top-[120%] left-[70%] w-48 overflow-hidden z-50"
         >
           <Option setOpen={setOpen} Icon={FiEdit} text="Career" link="/projects" />
           <Option setOpen={setOpen} Icon={GoProjectSymlink} text="Works" link="" />
