@@ -29,9 +29,9 @@ export default function Home() {
     <>
       <Header />
       <main className="flex min-h-screen flex-col place-items-center lg:p-24 sm:p-0">
-        <div className="container w-full">
+        <div className="container w-full shadow-xl">
           <FadeInSection>
-            <div className="img-bg-container relative overflow-hidden">
+            <div className="img-bg-container relative overflow-hidden shadow-xl">
               <FuzzyOverlay />
             </div>
             <div className="my-img-container flex justify-center">
@@ -107,7 +107,7 @@ export default function Home() {
         </div>
 
         <FadeInSection>
-          <div id="welcome-section" className="rounded dark:divide-[#C5C5C5] divide-neutral-900 divide-x">
+          <div id="welcome-section" className="rounded dark:divide-[#C5C5C5] divide-neutral-900 divide-x shadow-xl">
             <p className={`dark:text-[#C5C5C5] text-[#000000] text-2xl sm:divide-none ${poppins.className}`}> 
               <span className={`text-3xl ${space_grotesk.className}`}>Hi, welcome to Salihu’s page.</span>
               Salihu is a graduate of computer science, 
