@@ -1,14 +1,19 @@
-import React from 'react';
+import React, { FC } from 'react';
 import {
   FiEdit,
   FiChevronDown,
   FiDownload,
+  FiHome
 } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { GoProjectSymlink } from "react-icons/go";
 import Button from './Button';
 import Link from 'next/link';
+
+interface OptionalLikProp {
+  optionalLink?: string
+}
 
 
 const wrapperVariants = {
@@ -62,27 +67,23 @@ const Option = ({ text, Icon, setOpen, link, download }: any) => {
       onClick={() => setOpen(false)}
       className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md dark:text-[#c5c5c5] hover:bg-indigo-100 text-slate-700 hover:text-indigo-500 dark:hover:text-[#000] transition-colors cursor-pointer"
     >
-      <motion.span variants={actionIconVariants}>
-        <Icon />
-      </motion.span>
-      <span>
-        <Link
-          className="pointer-events-none flex place-items-center gap-2  lg:pointer-events-auto lg:p-0"
-          href={link}
-          download
-        >
+      <Link className='flex place-items-center gap-2 w-full' href={link}>
+        <motion.span variants={actionIconVariants}>
+          <Icon />
+        </motion.span>
+        <span>
           {text}
-        </Link>
-      </span>
+        </span>
+      </Link>
     </motion.li>
   );
 };
 
-export default function Header() {
+const Header: FC <OptionalLikProp> = ({ optionalLink }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="p-8 flex justify-between header-stick">
+    <div className="p-4 flex justify-between header-stick">
       <motion.div animate={open ? "open" : "closed"} className="relative">
         <button
           onClick={() => setOpen((pv) => !pv)}
@@ -99,9 +100,10 @@ export default function Header() {
           variants={wrapperVariants}
           style={{ originY: "top", translateX: "-50%" }}
           className="flex flex-col  p-2 rounded-lg bg-[#c4c8b8] dark:bg-[#1d1d1d] shadow-xl absolute top-[120%] left-[70%] w-48 overflow-hidden z-50"
-        >
-          <Option setOpen={setOpen} Icon={FiEdit} text="Career" link="/projects" />
-          <Option setOpen={setOpen} Icon={GoProjectSymlink} text="Works" link="" />
+        > 
+          {optionalLink && <Option setOpen={setOpen} Icon={FiHome} text="Home" link={`${optionalLink}`} />}
+          <Option setOpen={setOpen} Icon={FiEdit} text="Career" link="/career" />
+          <Option setOpen={setOpen} Icon={GoProjectSymlink} text="Works" link="/projects" />
           <Option setOpen={setOpen} Icon={FiDownload} text="Download Resume" link="/001SALIHU-KUTIRIKO-ABUBAKAR.pdf" />
         </motion.ul>
       </motion.div>
@@ -111,5 +113,6 @@ export default function Header() {
   );
 } 
 
+export default Header;
 
 

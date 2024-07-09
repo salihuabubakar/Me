@@ -9,7 +9,7 @@ import Link from "next/link";
 
 export const LinksContainer = () => {
   return (
-    <div className="dark:bg-[#1d1d1d] bg-transparent px-4 py-12 w-full mt-24">
+    <div className="dark:bg-[#1d1d1d] bg-transparent px-4 py-12 w-full mt-24 shadow-xl">
       <div className="mx-auto sm:m-0">
         <ClipPathLinks />
       </div>
