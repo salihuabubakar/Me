@@ -41,7 +41,7 @@ export default function Home() {
                 alt="Salihu's Logo"
                 width={460}
                 height={37}
-                priority
+                loading="lazy"
                 style={{ height: "500px"}}
               />
             </div>

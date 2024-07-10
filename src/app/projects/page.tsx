@@ -36,7 +36,7 @@ export default function Project() {
                 alt="Salihu's Logo"
                 width={900}
                 height={37}
-                priority
+                loading="lazy"
               />
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function Project() {
                 alt="Salihu's Logo"
                 width={900}
                 height={37}
-                priority
+                loading="lazy"
               />
             </div>
           </div>
@@ -86,7 +86,7 @@ export default function Project() {
                 alt="Salihu's Logo"
                 width={900}
                 height={37}
-                priority
+                loading="lazy"
               />
             </div>
           </div>
