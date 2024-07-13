@@ -190,11 +190,7 @@ body {
 }
 
 .img-bg-container {
-  /* background-color: #e5e5f7; */
   opacity: 0.8;
-  /* background-image:  linear-gradient(30deg, #2B2B2B 12%, transparent 12.5%, transparent 87%, #2B2B2B 87.5%, #2B2B2B), linear-gradient(150deg, #2A2A2A 12%, transparent 12.5%, transparent 87%, #2A2A2A 87.5%, #2A2A2A), linear-gradient(30deg, #2A2A2A 12%, transparent 12.5%, transparent 87%, #2A2A2A 87.5%, #2A2A2A), linear-gradient(150deg, #2C2C2C 12%, transparent 12.5%, transparent 87%, #2C2C2C 87.5%, #2C2C2C), linear-gradient(60deg, #2C2C2C 25%, transparent 25.5%, transparent 75%, #2C2C2C 75%, #2C2C2C), linear-gradient(60deg, #2B2B2B 25%, transparent 25.5%, transparent 75%, #2B2B2B 75%, #2B2B2B); */
-  /* background-size: 20px 35px;
-  background-position: 0 0, 0 0, 10px 18px, 10px 18px, 0 0, 10px 18px; */
   height: 300px;
   width: 100%;
   border-top-left-radius: 50px;
