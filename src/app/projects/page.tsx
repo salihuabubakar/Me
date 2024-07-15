@@ -26,14 +26,14 @@ export default function Project() {
       id: 0,
       cardTitle: "Peepal Tree Careers",
       cardLink: "https://peepal-tree-careers.vercel.app",
-      cardImg: "/peepal-tree-career.png",
+      cardImg: "/peepal-tree-career.webp",
       cardImgAlt: "peepal tree career website"
     },
     {
       id: 1,
       cardTitle: "Peepal Tree Management System",
       cardLink: "https://staging-hr-ms.vercel.app",
-      cardImg: "/peepal-tree-app.png",
+      cardImg: "/peepal-tree-app.webp",
       cardImgAlt: "peepal tree Management System App"
     }
   ];

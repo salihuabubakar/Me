@@ -37,7 +37,7 @@ export default function Home() {
             <div className="my-img-container flex justify-center">
               <Image
                 className="z-50 img "
-                src="/me-light.png"
+                src="/me-light.webp"
                 alt="Salihu's Logo"
                 width={460}
                 height={37}
@@ -110,8 +110,8 @@ export default function Home() {
           <div id="welcome-section" className="rounded dark:divide-[#C5C5C5] divide-neutral-900 divide-x shadow-xl">
             <div className={`dark:text-[#C5C5C5] text-[#000000] text-2xl sm:divide-none ${poppins.className} statment`}> 
               <span className={`text-3xl ${space_grotesk.className}`}>Hi, welcome to Salihu’s page.</span> <br /> <br />
-              Salihu has a Bachelor of Science in Computer Science, 
-              over the past years, he has acquired a ton lot of knowledge and experience as a software engineer. <br /> <br />
+              Salihu holds a Bachelor of Science in Computer Science, 
+              Over the past few years, he has acquired extensive knowledge and experience as a software engineer. <br /> <br />
               <span>He has worked with companies and individuals to <span className="underline"><Typewriter options={{strings: ['create', 'build', ' maintain'], autoStart: true, loop: true, delay: 500}}/></span> inovative software solutions.</span>
             </div>
             <div className="dark:text-[#C5C5C5] text-2xl flex-col space-y-24 btn-section">
