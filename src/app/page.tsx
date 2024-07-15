@@ -112,7 +112,7 @@ export default function Home() {
               <span className={`text-3xl ${space_grotesk.className}`}>Hi, welcome to Salihu’s page.</span> <br /> <br />
               Salihu has a Bachelor of Science in Computer Science, 
               over the past years, he has acquired a ton lot of knowledge and experience as a software engineer. <br /> <br />
-              <span>He has worked with companies and individuals to <span><Typewriter options={{strings: ['create', 'build', ' maintain'], autoStart: true, loop: true, delay: 500}}/></span> inovative software solutions.</span>
+              <span>He has worked with companies and individuals to <span className="underline"><Typewriter options={{strings: ['create', 'build', ' maintain'], autoStart: true, loop: true, delay: 500}}/></span> inovative software solutions.</span>
             </div>
             <div className="dark:text-[#C5C5C5] text-2xl flex-col space-y-24 btn-section">
               <div className="mt-5">
