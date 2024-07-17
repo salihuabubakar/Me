@@ -204,14 +204,6 @@ body {
   right: 0;
 }
 
-.my-img-container .img {
-  filter: grayscale(100%);
-  transition: filter 0.5s ease;
-}
-
-.my-img-container .img:hover {
-  filter: grayscale(0%);
-}
 
 @media screen and (max-width: 720px) {
   .my-img-container .img {
