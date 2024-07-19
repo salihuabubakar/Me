@@ -42,6 +42,39 @@ export default function Career() {
     },
     {
       id: 1,
+      careerTitle: "Freelance",
+      role: "IT Instructor",
+      careerImg: "/default-logo.webp",
+      careerImgAlt: "Peepal Tree Logo",
+      careerDesc: 
+        `
+          I have taught software engineering to children aged 11-12, focusing on problem-solving and creativity through coding projects.
+          Additionally, I provide IT advice and support for student projects, elders, and others, and mentor aspiring developers
+          towards their tech industry goals.
+        `,
+      careerStartDate: "Jan 2020",
+      careerEndDate: "Present",
+      cardPosition: "right"
+    },
+    {
+      id: 2,
+      careerTitle: "Nigerian Government",
+      role: "Nysc",
+      careerImg: "/nysc-logo.webp",
+      careerImgAlt: "Nysc Logo",
+      careerDesc: 
+        ` 
+          Having taught computer science to junior secondary school students, focusing on AI and using tools like ChatGPT and Google Gemini AI. 
+          I successfully achieved AI literacy, overcoming challenges and fostering enthusiasm for technology. I also advocated for digital transformation, 
+          convincing school management of the importance of an online presence. This experience highlights my strong foundation in AI, commitment to education, 
+          and passion for technological advancement as a software engineer.
+        `,
+      careerStartDate: "Aug 2023",
+      careerEndDate: "Jul 2024",
+      cardPosition: "left"
+    },
+    {
+      id: 3,
       careerTitle: "Timart",
       role: "FrontEnd Developer",
       careerImg: "/timart-logo.webp",
@@ -57,7 +90,7 @@ export default function Career() {
       cardPosition: "right"
     },
     {
-      id: 2,
+      id: 4,
       careerTitle: "Eduflix Limited",
       role: "Internship",
       careerImg: "/default-logo.webp",
@@ -72,22 +105,6 @@ export default function Career() {
       careerStartDate: "Nov 2020",
       careerEndDate: "Dec 2021",
       cardPosition: "left"
-    },
-    {
-      id: 3,
-      careerTitle: "Freelance",
-      role: "IT Instructor",
-      careerImg: "/default-logo.webp",
-      careerImgAlt: "Peepal Tree Logo",
-      careerDesc: 
-        `
-          I have taught software engineering to children aged 11-12, focusing on problem-solving and creativity through coding projects.
-          Additionally, I provide IT advice and support for student projects, elders, and others, and mentor aspiring developers
-          towards their tech industry goals.
-        `,
-      careerStartDate: "Jan 2020",
-      careerEndDate: "Present",
-      cardPosition: "right"
     },
   ];
 

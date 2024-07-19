@@ -3,7 +3,8 @@ import {
   FiEdit,
   FiChevronDown,
   FiDownload,
-  FiHome
+  FiHome,
+  FiBookOpen
 } from "react-icons/fi";
 import { motion } from "framer-motion";
 import { useState } from "react";
@@ -102,6 +103,7 @@ const Header: FC <OptionalLikProp> = ({ optionalLink }) => {
           className="flex flex-col  p-2 rounded-lg bg-[#c4c8b8] dark:bg-[#1d1d1d] shadow-xl absolute top-[120%] left-[70%] w-48 overflow-hidden z-50"
         > 
           {optionalLink && <Option setOpen={setOpen} Icon={FiHome} text="Home" link={`${optionalLink}`} />}
+          <Option setOpen={setOpen} Icon={FiBookOpen} text="Blog" link="/blog" />
           <Option setOpen={setOpen} Icon={FiEdit} text="Career" link="/career" />
           <Option setOpen={setOpen} Icon={GoProjectSymlink} text="Works" link="/projects" />
           <Option setOpen={setOpen} Icon={FiDownload} text="Download Resume" link="/001SALIHU-KUTIRIKO-ABUBAKAR.pdf" />
