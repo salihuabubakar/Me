@@ -5,14 +5,14 @@ import Header from "../Components/Header";
 import { Space_Grotesk } from "next/font/google";
 import Link from 'next/link';
 import { useFetchPosts } from "@/util/hooks/postHook";
-import { PostDetails, PostArray } from "@/util/types/post";
+import { PostDetails } from "@/util/types/post";
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
   subsets: ['latin'],
 })
 
-const Post: React.FC<PostArray> = () => {
+const Post = () => {
 
   const { data, loading, error } = useFetchPosts();
   return (
