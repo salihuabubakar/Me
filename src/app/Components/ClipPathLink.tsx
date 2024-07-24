@@ -21,7 +21,7 @@ const ClipPathLinks = () => {
   return (
     <div className="divide-y dark:divide-[#C5C5C5] divide-neutral-900 border dark:border-[#C5C5C5] border-neutral-900">
       <div className="grid grid-cols-2 divide-x dark:divide-[#C5C5C5] divide-neutral-900">
-        <LinkBox Icon={SiLinkedin} href="https://www.linkedin.com/in/salihu-abubakar-177086201/" />
+        <LinkBox Icon={SiLinkedin} href="https://www.linkedin.com/in/salihu-kutiriko-abubakar" />
         <LinkBox Icon={SiTwitter} href="https://x.com/SAkutiriko" />
       </div>
       <div className="grid grid-cols-1 dark:divide-[#C5C5C5] divide-neutral-900">

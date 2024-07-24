@@ -1,11 +1,14 @@
 "use client"
-import React, { FC } from "react";
+import React, { useRef, useEffect } from "react";
 import Image from "next/image";
 import Header from "../Components/Header";
 import { Space_Grotesk } from "next/font/google";
 import Link from 'next/link';
 import { useFetchPosts } from "@/util/hooks/postHook";
 import { PostDetails } from "@/util/types/post";
+import { register } from 'swiper/element/bundle';
+
+register();
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
