@@ -6,6 +6,8 @@ import Header from "../../Components/Header";
 import { Space_Grotesk } from "next/font/google";
 import { useFetchPosts } from "@/util/hooks/postHook";
 import { PostDetails } from "@/util/types/post";
+import { dateFormatter } from "@/util/dateFormat";
+import { DeckContainer, CardHeader } from "@/app/Components/blogContainer";
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
@@ -19,49 +21,35 @@ const Page = () => {
     <>
       <Header optionalLink="/" />
       <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 sm:p-0">
-        <div className="timeline-container">
+        <DeckContainer className="w-full">
           {data?.map((post: PostDetails, index: number) => {
             const { id, title, slug, description, author, createdAt } = post;
-            const date = new Date(createdAt);
-
-            // Define options for formatting
-            const options: Intl.DateTimeFormatOptions = {
-              weekday: 'short', // 'Mon', 'Tue', 'Wed', etc.
-              day: '2-digit',   // '01', '02', ..., '31'
-              month: 'short',    // 'Jan', 'Feb', ..., 'Dec'
-              year: 'numeric'   // '2024'
-            };
-
-            // Format the date
-            const formattedDate = date.toLocaleDateString('en-GB', options)
-              .replace(',', ''); // Remove the comma if needed
-
             if(url === slug) {
               return (
                 <React.Fragment key={index}>
-                  <div key={id} className={`inner-timeline-container timeline-lleft-container`}>
+                  <div className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl p-2" key={id}>
                     <Image
-                      className="timeline-image"
+                      className="banner-image"
                       src='/cover-img.webp'
                       alt='javascript banner'
                       width={50}
                       height={50}
                       priority
                     />
-                    <div className="timeline-text bg-[#c4c8b8] dark:bg-[#1d1d1d] dark:text-[#C5C5C5] text-[#000000] shadow-xl">
-                      <h2 className={`${space_grotesk.className} text-2xl text-[#222831] dark:text-[#C5C5C5]`}>{title}</h2>
-                      <b className="dark:text-[#C5C5C5] text-[#222831]">{author.name}</b> <br />
-                      <small>{formattedDate}</small>
-                      <p>
-                        {description}
-                      </p>
-                    </div>
+                    <h2 className={`${space_grotesk.className} mt-2 text-2xl text-[#222831] dark:text-[#C5C5C5]`}>{`#${index + 1} ${title}`}</h2>
+                    <CardHeader>
+                      <small className="cardHeader_account dark:text-[#C5C5C5] text-[#222831]">Author: {author.name}</small>
+                      <small className="cardHeader_date dark:text-[#C5C5C5] text-[#222831]">{dateFormatter(createdAt)}</small>
+                    </CardHeader>
+                    <p className="dark:text-[#C5C5C5] text-[#222831]">
+                      {description}
+                    </p>
                   </div>
                 </React.Fragment>
               )
             }
           })}
-        </div>
+        </DeckContainer>
       </main>
     </>
   );
