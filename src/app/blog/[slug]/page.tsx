@@ -7,7 +7,7 @@ import { Space_Grotesk } from "next/font/google";
 import { useFetchPosts } from "@/util/hooks/postHook";
 import { PostDetails } from "@/util/types/post";
 import { dateFormatter } from "@/util/dateFormat";
-import { DeckContainer, CardHeader } from "@/app/Components/blogContainer";
+import { Container, CardHeader } from "@/app/Components/blogContainer";
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
@@ -21,19 +21,19 @@ const Page = () => {
     <>
       <Header optionalLink="/" />
       <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 sm:p-0">
-        <DeckContainer className="w-full">
+        <Container className="w-fit">
           {data?.map((post: PostDetails, index: number) => {
-            const { id, title, slug, description, author, createdAt } = post;
+            const { _id, title, slug, description, author, createdAt } = post;
             if(url === slug) {
               return (
                 <React.Fragment key={index}>
-                  <div className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl p-2" key={id}>
+                  <div className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl p-2" key={_id}>
                     <Image
                       className="banner-image"
                       src='/cover-img.webp'
                       alt='javascript banner'
-                      width={50}
-                      height={50}
+                      width={460}
+                      height={37}
                       priority
                     />
                     <h2 className={`${space_grotesk.className} mt-2 text-2xl text-[#222831] dark:text-[#C5C5C5]`}>{`#${index + 1} ${title}`}</h2>
@@ -49,7 +49,7 @@ const Page = () => {
               )
             }
           })}
-        </DeckContainer>
+        </Container>
       </main>
     </>
   );
