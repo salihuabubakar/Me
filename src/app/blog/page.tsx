@@ -27,13 +27,6 @@ const Post = () => {
             return (
               <Card className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl" key={index} index={index}>
                 <Link href={`/blog/${slug}`}>
-                  {/* <Image
-                    className="banner-image"
-                    src='/cover-img.webp'
-                    alt='javascript banner'
-                    width={50}
-                    height={50}
-                  /> */}
                   <h2 className={`${space_grotesk.className} mt-2 text-2xl text-[#222831] dark:text-[#C5C5C5]`}>{`#${index + 1} ${title}`}</h2>
                   <CardHeader>
                     <small className="cardHeader_account dark:text-[#C5C5C5] text-[#222831]">Author: {author.name}</small>
