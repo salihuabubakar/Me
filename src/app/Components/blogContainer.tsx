@@ -11,7 +11,7 @@ export const DeckContainer = styled.div`
   }
 `;
 
-export const Card = styled.div`
+export const Card: any = styled.div`
   position: relative;
   padding: 1em;
   z-index: 5;
