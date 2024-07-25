@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  .banner-image {
+    width: 100%;
+  }
+`;
+
+
 export const DeckContainer = styled.div`
   position: relative;
   max-width: 500px;
