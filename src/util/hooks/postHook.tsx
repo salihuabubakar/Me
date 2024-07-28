@@ -6,7 +6,7 @@ export const useFetchPosts = (): UseFetchPostsResult => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const baseUrl = process.env.NODE_ENV === 'development' ? 'http://localhost:3000' : 'https://salihuk.vercel.app'
+  const baseUrl = process.env.VERCEL_ENV === 'production' ? 'https://salihuk.vercel.app' : 'http://localhost:3000'
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,13 +26,15 @@ export const useFetchPosts = (): UseFetchPostsResult => {
       }
     };
 
-    const storedPosts = localStorage.getItem('posts');
-    if (storedPosts) {
-      setData(JSON.parse(storedPosts));
-      setLoading(false);
-    } else {
-      fetchData();
-    }
+    fetchData();
+
+    // const storedPosts = localStorage.getItem('posts');
+    // if (storedPosts) {
+    //   setData(JSON.parse(storedPosts));
+    //   setLoading(false);
+    // } else {
+    //   fetchData();
+    // }
   }, [baseUrl]);
 
   return { data, loading, error };
