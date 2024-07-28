@@ -1,15 +1,14 @@
 // mongodb.ts
 
 import { MongoClient, MongoClientOptions } from 'mongodb';
-const database = process.env.VERCEL_ENV === 'production' ? process.env.MONGODB_URI : process.env.MONGO_LOCAL_URI;
 
-const uri: string = database as string;
+const uri: string = process.env.MONGODB_URL as string;
 const options: MongoClientOptions = {}; // Empty options object
 
 let client: MongoClient;
 let clientPromise: Promise<MongoClient>;
 
-if (!database) {
+if (!uri) {
   throw new Error('Add Mongo URI to .env.local');
 }
 
