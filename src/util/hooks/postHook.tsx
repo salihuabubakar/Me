@@ -6,7 +6,7 @@ export const useFetchPosts = (): UseFetchPostsResult => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  const baseUrl = process.env.VERCEL_ENV === 'production' ? 'https://salihuk.vercel.app' : 'http://localhost:3000'
+  const baseUrl = process.env.NODE_ENV === 'production' ? 'https://salihuk.vercel.app' : 'http://localhost:3000'
 
   useEffect(() => {
     const fetchData = async () => {
