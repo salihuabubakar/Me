@@ -39,7 +39,7 @@ const Post = () => {
             </svg>
           ) : error ? <Card><h2 className={`mt-2 text-2xl text-[#222831] dark:text-[#C5C5C5]`}>Error Loading Data</h2></Card> : (
             <>
-              {data?.map((careers: PostDetails, index: number) => {
+              {data && data?.length > 0 ? data?.map((careers: PostDetails, index: number) => {
                 const { _id, title, slug, description, author, createdAt } = careers;
                 return (
                   <Card className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl" key={index} index={index}>
@@ -55,7 +55,9 @@ const Post = () => {
                     </Link>
                   </Card>
                 )
-                })}
+                })
+                : <Card><h2 className={`mt-2 text-2xl text-[#222831] dark:text-[#C5C5C5]`}>No Posts yet.</h2></Card>
+              }
             </>
           )}
         </DeckContainer>
