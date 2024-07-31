@@ -1,7 +1,7 @@
 import clientPromise from "../../../lib/mongodb";
 import { NextRequest, NextResponse } from 'next/server';
 
-// The use of the dynamic = 'force-dynamic' directive is correct for enforcing dynamic data fetching Nextjs
+// The use of the dynamic = 'force-dynamic' directive is for enforcing dynamic data fetching Nextjs
 export const dynamic = 'force-dynamic'
 
 export async function GET(req: NextRequest) {
