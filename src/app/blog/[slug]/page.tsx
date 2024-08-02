@@ -8,7 +8,7 @@ import { useFetchPosts } from "@/util/hooks/postHook";
 import { PostDetails } from "@/util/types/post";
 import { dateFormatter } from "@/util/dateFormat";
 import { Container, CardHeader } from "@/app/Components/blogContainer";
-import CodeSnippet from "@/app/Components/codeSnippet";
+import CodeSnippet from "../../Components/CodeSnippet";
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
