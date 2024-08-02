@@ -2,7 +2,9 @@ export interface PostDetails {
   _id: string;
   title: string;
   slug: string;
-  description: string;
+  description: [];
+  introduction: string;
+  code: [];
   author: {
     name: string,
     age: number,

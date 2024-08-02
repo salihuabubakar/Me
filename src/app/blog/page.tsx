@@ -40,7 +40,7 @@ const Post = () => {
           ) : error ? <Card><h2 className={`mt-2 text-2xl text-[#222831] dark:text-[#C5C5C5]`}>Error Loading Data</h2></Card> : (
             <>
               {data && data?.length > 0 ? data?.map((careers: PostDetails, index: number) => {
-                const { _id, title, slug, description, author, createdAt } = careers;
+                const { _id, title, slug, introduction, author, createdAt } = careers;
                 return (
                   <Card className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl" key={index} index={index}>
                     <Link href={`/blog/${slug}`}>
@@ -50,7 +50,7 @@ const Post = () => {
                         <small className="cardHeader_date dark:text-[#C5C5C5] text-[#222831]">{dateFormatter(createdAt)}</small>
                       </CardHeader>
                       <CardBody>
-                        <p className="cardText dark:text-[#C5C5C5] text-[#222831]">{description}</p>
+                        <p className="cardText dark:text-[#C5C5C5] text-[#222831]">{introduction}</p>
                       </CardBody>
                     </Link>
                   </Card>

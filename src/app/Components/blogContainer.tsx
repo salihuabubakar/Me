@@ -1,7 +1,20 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  width: 45%;
   .banner-image {
+    width: 100%;
+  }
+
+  @media (max-width: 1500px) {
+    width: 60%;
+  }
+
+  @media (max-width: 920px) {
+    width: 70%;
+  }
+
+  @media (max-width: 780px) {
     width: 100%;
   }
 `;

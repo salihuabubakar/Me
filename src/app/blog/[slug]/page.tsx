@@ -8,6 +8,7 @@ import { useFetchPosts } from "@/util/hooks/postHook";
 import { PostDetails } from "@/util/types/post";
 import { dateFormatter } from "@/util/dateFormat";
 import { Container, CardHeader } from "@/app/Components/blogContainer";
+import CodeSnippet from "@/app/Components/codeSnippet";
 
 const space_grotesk = Space_Grotesk({
   weight: '700',
@@ -23,7 +24,7 @@ const Page = () => {
       <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 sm:p-0">
         <Container className="w-fit">
           {data?.map((post: PostDetails, index: number) => {
-            const { _id, title, slug, description, author, createdAt } = post;
+            const { _id, title, slug, description, code, introduction, author, createdAt } = post;
             if(url === slug) {
               return (
                 <React.Fragment key={index}>
@@ -41,9 +42,30 @@ const Page = () => {
                       <small className="cardHeader_account dark:text-[#C5C5C5] text-[#222831]">Author: {author.name}</small>
                       <small className="cardHeader_date dark:text-[#C5C5C5] text-[#222831]">{dateFormatter(createdAt)}</small>
                     </CardHeader>
+                    <CardHeader>
+                      <small className="cardHeader_account dark:text-[#C5C5C5] text-[#222831]">Introduction</small>
+                    </CardHeader>
                     <p className="dark:text-[#C5C5C5] text-[#222831]">
-                      {description}
+                      {introduction}
                     </p>
+                    <div className="bg-[#282C34] dark:bg-transparent rounded shadow m-1">
+                      {code?.map((code, index: number) => {
+                        const { codeExplain } = code;
+                        return (
+                          <CodeSnippet key={index} codeDescription={codeExplain} />
+                        )
+                      })}
+                    </div>
+                    <div>
+                      {
+                        description?.map((d, index: number) => {
+                          const { desc } = d;
+                          return (
+                            <p className="dark:text-[#C5C5C5] text-[#222831]" key={index}>{desc}</p>
+                          )
+                        })
+                      }
+                    </div>
                   </div>
                 </React.Fragment>
               )
