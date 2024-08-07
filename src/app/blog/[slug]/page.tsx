@@ -45,7 +45,7 @@ const Page = () => {
                     <CardHeader>
                       <small className="cardHeader_account dark:text-[#C5C5C5] text-[#222831]">Introduction</small>
                     </CardHeader>
-                    <p className="dark:text-[#C5C5C5] text-[#222831]">
+                    <p className="dark:text-[#C5C5C5] text-[#222831] whitespace-pre-wrap">
                       {introduction}
                     </p>
                     <div className="bg-[#282C34] dark:bg-transparent rounded shadow m-1">
@@ -61,7 +61,7 @@ const Page = () => {
                         description?.map((d, index: number) => {
                           const { desc } = d;
                           return (
-                            <p className="dark:text-[#C5C5C5] text-[#222831]" key={index}>{desc}</p>
+                            <p className="dark:text-[#C5C5C5] text-[#222831] whitespace-pre-wrap" key={index}>{desc}</p>
                           )
                         })
                       }
