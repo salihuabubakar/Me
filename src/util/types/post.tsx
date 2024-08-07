@@ -2,6 +2,7 @@ export interface PostDetails {
   _id: string;
   title: string;
   slug: string;
+  img_url: string;
   description: [];
   introduction: string;
   code: [];

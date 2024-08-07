@@ -24,14 +24,14 @@ const Page = () => {
       <main className="flex min-h-screen flex-col items-center justify-between lg:p-24 sm:p-0">
         <Container className="w-fit">
           {data?.map((post: PostDetails, index: number) => {
-            const { _id, title, slug, description, code, introduction, author, createdAt } = post;
+            const { _id, title, slug, img_url, description, code, introduction, author, createdAt } = post;
             if(url === slug) {
               return (
                 <React.Fragment key={index}>
                   <div className="bg-[#c4c8b8] dark:bg-[#1d1d1d] rounded shadow-xl p-2" key={_id}>
                     <Image
                       className="banner-image"
-                      src='/cover-img.webp'
+                      src={img_url}
                       alt='javascript banner'
                       width={460}
                       height={37}
