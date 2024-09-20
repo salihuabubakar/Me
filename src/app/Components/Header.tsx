@@ -106,7 +106,7 @@ const Header: FC <OptionalLikProp> = ({ optionalLink }) => {
           <Option setOpen={setOpen} Icon={FiBookOpen} text="Blog" link="/blog" />
           <Option setOpen={setOpen} Icon={FiEdit} text="Career" link="/career" />
           <Option setOpen={setOpen} Icon={GoProjectSymlink} text="Works" link="/projects" />
-          <Option setOpen={setOpen} Icon={FiDownload} text="Download Resume" link="/001SALIHU-KUTIRIKO-ABUBAKAR.pdf" />
+          <Option setOpen={setOpen} Icon={FiDownload} text="Download Resume" link="/000SALIHU-KUTIRIKO-ABUBAKAR.pdf" />
         </motion.ul>
       </motion.div>
 

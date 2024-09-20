@@ -116,7 +116,7 @@ export default function Home() {
             </div>
             <div className="dark:text-[#C5C5C5] text-2xl flex-col space-y-24 btn-section">
               <div className="mt-5">
-                <Link href="/001SALIHU-KUTIRIKO-ABUBAKAR.pdf" download className="rounded-2xl w-full ml-2 border-2 border-dashed dark:border-[#C5C5C5] border-black bg-transparent px-6 py-3 font-semibold uppercase dark:hover:text-[#c5c5c5] text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
+                <Link href="/000SALIHU-KUTIRIKO-ABUBAKAR.pdf" download className="rounded-2xl w-full ml-2 border-2 border-dashed dark:border-[#C5C5C5] border-black bg-transparent px-6 py-3 font-semibold uppercase dark:hover:text-[#c5c5c5] text-black transition-all duration-300 hover:translate-x-[-4px] hover:translate-y-[-4px] hover:rounded-md hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none">
                   Salihu’s Resume <FiDownload style={{ display: "inline"}} />
                 </Link>
               </div>

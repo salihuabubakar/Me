@@ -106,6 +106,22 @@ export default function Career() {
       careerEndDate: "Dec 2021",
       cardPosition: "left"
     },
+    {
+      id: 5,
+      careerTitle: "Peepal Tree",
+      role: "UI/UX Designer",
+      careerImg: "/peepal-tree-logo.webp",
+      careerImgAlt: "Peepal Tree Logo",
+      careerDesc: 
+        `
+          I designed and developed an innovative timesheet management product, enhancing usability and engagement, 
+          conducted user research to optimize design decisions, boosting productivity by 20%, and collaborated with 
+          cross-functional teams to ensure consistent design and reinforce brand identity.
+        `,
+      careerStartDate: "Oct 2024",
+      careerEndDate: "Present",
+      cardPosition: "right"
+    },
   ];
 
   return (
